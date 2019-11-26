@@ -1,0 +1,13 @@
+/Users/ricardovolvox/Desktop/WIGAL/REDDE SDK/CSHARP/bin/Debug/netcoreapp3.0/CSHARP
+/Users/ricardovolvox/Desktop/WIGAL/REDDE SDK/CSHARP/bin/Debug/netcoreapp3.0/CSHARP.deps.json
+/Users/ricardovolvox/Desktop/WIGAL/REDDE SDK/CSHARP/bin/Debug/netcoreapp3.0/CSHARP.runtimeconfig.json
+/Users/ricardovolvox/Desktop/WIGAL/REDDE SDK/CSHARP/bin/Debug/netcoreapp3.0/CSHARP.runtimeconfig.dev.json
+/Users/ricardovolvox/Desktop/WIGAL/REDDE SDK/CSHARP/bin/Debug/netcoreapp3.0/CSHARP.dll
+/Users/ricardovolvox/Desktop/WIGAL/REDDE SDK/CSHARP/bin/Debug/netcoreapp3.0/CSHARP.pdb
+/Users/ricardovolvox/Desktop/WIGAL/REDDE SDK/CSHARP/obj/Debug/netcoreapp3.0/CSHARP.csprojAssemblyReference.cache
+/Users/ricardovolvox/Desktop/WIGAL/REDDE SDK/CSHARP/obj/Debug/netcoreapp3.0/CSHARP.AssemblyInfoInputs.cache
+/Users/ricardovolvox/Desktop/WIGAL/REDDE SDK/CSHARP/obj/Debug/netcoreapp3.0/CSHARP.AssemblyInfo.cs
+/Users/ricardovolvox/Desktop/WIGAL/REDDE SDK/CSHARP/obj/Debug/netcoreapp3.0/CSHARP.dll
+/Users/ricardovolvox/Desktop/WIGAL/REDDE SDK/CSHARP/obj/Debug/netcoreapp3.0/CSHARP.pdb
+/Users/ricardovolvox/Desktop/WIGAL/REDDE SDK/CSHARP/bin/Debug/netcoreapp3.0/Newtonsoft.Json.dll
+/Users/ricardovolvox/Desktop/WIGAL/REDDE SDK/CSHARP/obj/Debug/netcoreapp3.0/CSHARP.csproj.CopyComplete
