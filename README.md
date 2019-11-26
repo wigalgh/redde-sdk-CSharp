@@ -24,27 +24,25 @@ git clone https://github.com/wigalsolutionsltd/redde-sdk-CSharp.git
 
 ## Usage
 
-Importing **redde python sdk** package
-
-```python
-
-from reddepy.redde import ReddeApi
-
-```
-
-Import **redde-python-package** at the top of your js file as shown above. Enter your API key and App ID which was provided to you by the Redde Team:
+Enter your API key and App ID which was provided to you by the Redde Team:
 
 ```c#
 
-app_id = ""  # Enter App ID Here
-api_key = ""  # Enter Api Key Here
+#Replace App ID with your App ID
+int app_id = 349009;
+
+#Enter Api Key
+string api_key = "";
 
 
-#Instantiate ReddeApi Class
-redde = ReddeApi(api_key, app_id)
+#Create an instance of Redde Class
+Redde red = new Redde(api_key, app_id);
 
-client_ref = redde.clientReferenceNumber(6)
-client_id = redde.randomClientID(6)
+#Client Reference
+string client_ref = red.clientReferenceNumber(6);
+
+#Client ID
+string client_id = red.randomClientID(6);
 
 
 ``` 
@@ -58,25 +56,22 @@ To use the API to recieve money from a customer, the receiveMoney() method will 
 
 ```c#
 
+#Enter App ID
+int app_id = 349009;
 
-            #Enter App ID
-            int app_id = 349009;
+#Enter Api Key
+string api_key = "";
 
-            #Enter Api Key
-            string api_key = "";
+#Create an instance of Redde Class
+Redde red = new Redde(api_key, app_id);
 
-            #Create an instance of Redde Class
-            Redde red = new Redde(api_key, app_id);
+#Client Reference
+string client_ref = red.clientReferenceNumber(6);
 
-            #Client Reference
-            string client_ref = red.clientReferenceNumber(6);
+#Client ID
+string client_id = red.randomClientID(6);
 
-            #Client ID
-            string client_id = red.randomClientID(6);
-
-            Console.WriteLine(red.receiveMoney(1, "233200000000", client_ref, client_id, "MTN"));
-
-
+Console.WriteLine(red.receiveMoney(1, "233200000000", client_ref, client_id, "MTN"));
 
 
 ```
@@ -86,26 +81,25 @@ To use the API to recieve money from a customer, the receiveMoney() method will 
 
 To use the API to send money to a customer, the sendMoney() method will be used which takes takes 5 required arguments which are: **amount, network type(MTN, AIRTELTIGO, VODAFONE), phone number, client reference, and client id** respectively.
 
-```python
-
-from reddepy.redde import ReddeApi
+```c#
 
 
-app_id = ""  # Enter App ID Here
-api_key = ""  # Enter Api Key Here
+#Enter App ID
+int app_id = 349009;
 
+#Enter Api Key
+string api_key = "";
 
-#Instantiate ReddeApi Class
-redde = ReddeApi(api_key, app_id)
+#Create an instance of Redde Class
+Redde red = new Redde(api_key, app_id);
 
-client_ref = redde.clientReferenceNumber(6)
-client_id = redde.randomClientID(6)
+#Client Reference
+string client_ref = red.clientReferenceNumber(6);
 
+#Client ID
+string client_id = red.randomClientID(6);
 
-
-#Call receiveMoney Function 
-send = redde.sendMoney(1, 233240000004, client_ref, client_id, "MTN")
-print(send)
+Console.WriteLine(red.sendMoney(1, "233200000000", client_ref, client_id, "MTN"));
 
 ```
 
@@ -120,7 +114,7 @@ You need to setup your callback URL for the apps we create for you on Redde
 5. Apply changes and you are all set.
 
 Most APIs implement callbacks for easy tracking of api transactions so try and implement it to keep track of the API transactions.
-```python
+```c#
 
 //Callback Url Endpoint
 
