@@ -1,9 +1,9 @@
-# reddePy
+# redde-sdk-CSharp
 <img src="https://www.reddeonline.com/assets/images/redde-logo.png" width=400>
 
 
 # reddepy-sdk
-Python3 SDK that allows merchants to receive, send, check transaction status, and perform lots of payment transactions.
+CSharp SDK that allows merchants to receive, send, check transaction status, and perform lots of payment transactions.
 
 Before you can have access to APIs you need to register and create an [Account](https://app.reddeonline.com/register) on reddeonline. Header for all request should have {"apikey": "string"}: and this API key will be sent to merchant when their app configuration is setup for them by Wigal.
 
@@ -14,14 +14,11 @@ For more information on documentation go to developers.reddeonline.com
 * [Examples](#examples)
 
 ## Installation
-To use this library you'll need to have created a [Redde account](https://app.reddeonline.com/register).                     To install this package and use in your project, we recommend using Npm.
-
+To use this library you'll need to have created a [Redde account](https://app.reddeonline.com/register).                     
+Clone or download the repository 
 ```
-python3 -m pip install reddepy
+git clone https://github.com/wigalsolutionsltd/redde-sdk-CSharp.git
 
-or 
-
-pip install reddepy
 ```
 
 
@@ -37,7 +34,7 @@ from reddepy.redde import ReddeApi
 
 Import **redde-python-package** at the top of your js file as shown above. Enter your API key and App ID which was provided to you by the Redde Team:
 
-```python
+```c#
 
 app_id = ""  # Enter App ID Here
 api_key = ""  # Enter Api Key Here
@@ -59,26 +56,28 @@ client_id = redde.randomClientID(6)
 
 To use the API to recieve money from a customer, the receiveMoney() method will be used which takes takes 5 required arguments which are: **amount, network type(MTN, AIRTELTIGO, VODAFONE), phone number, client reference, and client id** respectively.
 
-```python
-
-from reddepy.redde import ReddeApi
+```c#
 
 
-app_id = ""  # Enter App ID Here
-api_key = ""  # Enter Api Key Here
+            #Enter App ID
+            int app_id = 349009;
+
+            #Enter Api Key
+            string api_key = "";
+
+            #Create an instance of Redde Class
+            Redde red = new Redde(api_key, app_id);
+
+            #Client Reference
+            string client_ref = red.clientReferenceNumber(6);
+
+            #Client ID
+            string client_id = red.randomClientID(6);
+
+            Console.WriteLine(red.receiveMoney(1, "233200000000", client_ref, client_id, "MTN"));
 
 
-#Instantiate ReddeApi Class
-redde = ReddeApi(api_key, app_id)
 
-client_ref = redde.clientReferenceNumber(6)
-client_id = redde.randomClientID(6)
-
-
-
-#Call receiveMoney Function 
-recieve = redde.receiveMoney(1, 233240000004, client_ref, client_id, "MTN")
-print(recieve)
 
 ```
 
